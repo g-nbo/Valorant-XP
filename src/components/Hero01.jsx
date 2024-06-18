@@ -5,11 +5,14 @@ import Link from '@mui/joy/Link';
 import Typography from '@mui/joy/Typography';
 import ArrowForward from '@mui/icons-material/ArrowForward';
 import TwoSidedLayout from '../components/TwoSidedLayout';
+import AgentContext from '../context/AgentContext';
+import { useContext } from 'react';
 
 export default function HeroLeft01(props) {
 
+    const context = useContext(AgentContext)
     const agent = props.agent;
-    
+
 
     return (
         <>
@@ -28,9 +31,11 @@ export default function HeroLeft01(props) {
                 <Typography fontSize="lg" textColor="white" lineHeight="lg">
                     {agent.description}
                 </Typography>
-                <Button size="lg" endDecorator={<ArrowForward fontSize="xl" />}>
-                    Next Agent
-                </Button>
+                <a href={context.agents.indexOf(agent) + 1 >= context.agents.length ? context.agents[0].uuid : context.agents[context.agents.indexOf(agent) + 1].uuid}>
+                    <Button size="lg" endDecorator={<ArrowForward fontSize="xl" />}>
+                        Next Agent
+                    </Button>
+                </a>
                 <Typography
                     level="body-xs"
                     sx={{
@@ -43,9 +48,26 @@ export default function HeroLeft01(props) {
 
                 </Typography>
             </TwoSidedLayout>
-            <TwoSidedLayout>
-                    <div>Something</div>
+            <hr />
+            <TwoSidedLayout img={agent.abilities[0].displayIcon}>
+                <div>
+
+                    {agent.abilities.map((a, i) => {
+                        return <>
+                            <h3>{a.displayName}</h3>
+                            <p key={i}>{a.description} </p>
+                        </>
+
+                    })}</div>
             </TwoSidedLayout>
+            <hr />
+            <TwoSidedLayout img={agent.role.displayIcon}>
+                <div>
+                    <h2>{agent.role.displayName}</h2>
+                    <p>{agent.role.description}</p>
+                </div>
+            </TwoSidedLayout>
+            <hr />
         </>
     );
 }

@@ -67,10 +67,12 @@ export default function TwoSidedLayout({img, children, reversed}) {
           flexBasis: '50%',
         })}
       >
-        <img
+
+          <img
           src={img}
-          alt=""
+          alt={img}
         />
+        
       </AspectRatio>
     </Container>
   );

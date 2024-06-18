@@ -12,33 +12,19 @@ function AgentsPage() {
     const { id } = useParams();
     const context = useContext(AgentContext)
 
-    const selectedAgent = context.agents.find((a) => a.displayName.toLowerCase() === id.toLowerCase())
+    const selectedAgent = context.agents.find((a) => a.uuid === id)
     console.log(selectedAgent)
-
-
-
-
-
-
-
-
 
 
     return (
         <>
-
             <div>
                 {
                     selectedAgent ?
                         <div>
                             <HeroLeft01 agent={selectedAgent} img={"something"}/>
-
-                        </div>
-
-
-
-
-                        : ""
+                        </div> :
+                        ""
                 }
             </div>
         </>

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import LandingPage from './pages/LandingPage'
+import LandingPage from './LandingPage/LandingPage'
 import SelectAgentsPage from './pages/SelectAgentsPage'
 import AgentsPage from './pages/AgentsPage'
 import AgentContext from './context/AgentContext'
 import getAgents from './services/valAPI'
+
+
 
 
 
@@ -41,14 +41,8 @@ function App() {
   }, [])
 
 
-
-
-
-
   return (
-    <AgentContext.Provider value={{
-      "agents": agents
-    }}>
+    <AgentContext.Provider value={{"agents": agents}}>
       <BrowserRouter>
         <Routes>
           <Route path='/'>

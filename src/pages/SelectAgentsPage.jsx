@@ -18,7 +18,7 @@ function SelectAgentsPage() {
                 {/* Display each agent */}
                 {context.agents.map((a, i) => {
                     return (
-                        <a key={i} href={agentUrl + a.displayName}>
+                        <a key={i} href={agentUrl + a.uuid}>
                             <BasicCard key={i} agent={a} />
                         </a>
                     )
