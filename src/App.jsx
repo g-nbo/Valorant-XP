@@ -28,7 +28,6 @@ function App() {
       chars.sort((a, b) => a.displayName.localeCompare(b.displayName))
       // Insure there are no duplicate agents
       const filteredAgents = chars.filter((c, i) => i >= chars.length - 1 ? c : c.displayName !== chars[i + 1].displayName)
-      console.log(filteredAgents)
 
       setAgents(filteredAgents);
 
