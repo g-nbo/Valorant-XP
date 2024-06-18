@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.agents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  
+}
+
+
