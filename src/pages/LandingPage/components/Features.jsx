@@ -16,27 +16,27 @@ import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
 const items = [
   {
     icon: <ViewQuiltRoundedIcon />,
-    title: 'Dashboard',
+    title: 'Accurate Information',
     description:
-      'This item could provide a snapshot of the most important metrics or data points related to the product.',
-    imageLight: 'url("/static/images/templates/templates-images/dash-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
+      'Our website offers detailed, up-to-date information on all 24 Valorant agents. Get accurate stats, abilities, and insights to enhance your gameplay.',
+    imageLight: 'url("https://cdn.realsport101.com/images/ncavvykf/realsport-production/b20c1658bf584921db33832f5301b86bea2bc80c-3840x2160.png?rect=0,72,3840,2016&w=1200&h=630&auto=format")',
+    imageDark: 'url("https://cdn.realsport101.com/images/ncavvykf/realsport-production/b20c1658bf584921db33832f5301b86bea2bc80c-3840x2160.png?rect=0,72,3840,2016&w=1200&h=630&auto=format")',
   },
   {
     icon: <EdgesensorHighRoundedIcon />,
-    title: 'Mobile integration',
+    title: 'Mobile Responsive',
     description:
-      'This item could provide information about the mobile app version of the product.',
-    imageLight: 'url("/static/images/templates/templates-images/mobile-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/mobile-dark.png")',
+      'Our website is fully mobile-responsive, ensuring a seamless and intuitive experience on any device. ',
+    imageLight: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPczEdAhb43nGtSnKO2hOatbmvJmExoDpWQ&s")',
+    imageDark: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPczEdAhb43nGtSnKO2hOatbmvJmExoDpWQ&s")',
   },
   {
     icon: <DevicesRoundedIcon />,
-    title: 'Available on all platforms',
+    title: 'Intuitive Design',
     description:
-      'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
-    imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
+      'Our website is designed to be intuitive and easy to use. Find the information you need quickly and efficiently.',
+    imageLight: 'url("https://images.alphacoders.com/118/1186644.png")',
+    imageDark: 'url("https://images.alphacoders.com/118/1186644.png")',
   },
 ];
 
@@ -55,16 +55,14 @@ export default function Features() {
         <Grid item xs={12} md={6}>
           <div>
             <Typography component="h2" variant="h4" color="text.primary">
-              Product features
+              Features
             </Typography>
             <Typography
               variant="body1"
               color="text.secondary"
               sx={{ mb: { xs: 2, sm: 4 } }}
             >
-              Here you can provide a brief overview of the key features of the
-              product. For example, you could list the number of features, the types
-              of features, add-ons, or the benefits of the features.
+              Experience a mobile-responsive, easy-to-use, and intuitive platform that delivers precise information. Discover, compare, and select top agents effortlessly.
             </Typography>
           </div>
           <Grid container item gap={1} sx={{ display: { xs: 'auto', sm: 'none' } }}>

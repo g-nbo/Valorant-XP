@@ -16,8 +16,8 @@ export default function Hero() {
         width: '100%',
         backgroundImage:
           theme.palette.mode === 'light'
-            ? 'linear-gradient(180deg, #CEE5FD, #FFF)'
-            : `linear-gradient(#02294F, ${alpha('#090E10', 0.0)})`,
+            ? 'linear-gradient(180deg, #FFF, #FFF)'
+            : `linear-gradient(#4F0E00, ${alpha('#000000', 0.0)})`,
         backgroundSize: '100% 20%',
         backgroundRepeat: 'no-repeat',
       })}
@@ -70,9 +70,10 @@ export default function Hero() {
             sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
           >
             
-            <Button style={{minWidth: "20em"}} variant="contained" color="primary">
-              Agent Select
+            <Button href='/agents' style={{minWidth: "20em"}} variant="contained" color="primary">
+              Start Here
             </Button>
+            
           </Stack>
           
         </Stack>
@@ -85,15 +86,15 @@ export default function Hero() {
             width: '100%',
             backgroundImage:
               theme.palette.mode === 'light'
-                ? 'url("/static/images/templates/templates-images/hero-light.png")'
-                : 'url("/static/images/templates/templates-images/hero-dark.png")',
+                ? 'url("https://www.cnet.com/a/img/resize/85aa642126780beeeb22809375b4bf2c6509f99e/hub/2021/09/02/1511ef05-2457-4272-918d-6719d4897e65/beta-key-art-valorant.jpg?auto=webp&fit=crop&height=900&width=1200")'
+                : 'url("https://www.cnet.com/a/img/resize/85aa642126780beeeb22809375b4bf2c6509f99e/hub/2021/09/02/1511ef05-2457-4272-918d-6719d4897e65/beta-key-art-valorant.jpg?auto=webp&fit=crop&height=900&width=1200")',
             backgroundSize: 'cover',
             borderRadius: '10px',
             outline: '1px solid',
             outlineColor:
               theme.palette.mode === 'light'
-                ? alpha('#BFCCD9', 0.5)
-                : alpha('#9CCCFC', 0.1),
+                ? alpha('#FFFFF', 0.5)
+                : alpha('#000000', 0.1),
             boxShadow:
               theme.palette.mode === 'light'
                 ? `0 0 12px 8px ${alpha('#9CCCFC', 0.2)}`

@@ -21,8 +21,8 @@ function AgentsPage() {
             <div>
                 {
                     selectedAgent ?
-                        <div>
-                            <HeroLeft01 agent={selectedAgent} img={"something"}/>
+                        <div >
+                            <HeroLeft01  agent={selectedAgent} img={"something"}/>
                         </div> :
                         ""
                 }

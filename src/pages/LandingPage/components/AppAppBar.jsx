@@ -14,7 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
 
 const logoStyle = {
-  width: '140px',
+  width: '65px',
   height: 'auto',
   cursor: 'pointer',
 };
@@ -74,6 +74,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
             })}
           >
+            
             <Box
               sx={{
                 flexGrow: 1,
@@ -83,9 +84,10 @@ function AppAppBar({ mode, toggleColorMode }) {
                 px: 0,
               }}
             >
+              
               <img
                 src={
-                  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg'
+                  'https://1000logos.net/wp-content/uploads/2022/09/Valorant-Emblem.png'
                 }
                 style={logoStyle}
                 alt="logo of sitemark"
@@ -99,14 +101,16 @@ function AppAppBar({ mode, toggleColorMode }) {
                     Features
                   </Typography>
                 </MenuItem>
+
                 <MenuItem
                   onClick={() => scrollToSection('testimonials')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Testimonials
+                    About
                   </Typography>
                 </MenuItem>
+                
                 <MenuItem
                   onClick={() => scrollToSection('highlights')}
                   sx={{ py: '6px', px: '12px' }}
@@ -115,14 +119,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     Highlights
                   </Typography>
                 </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('pricing')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
-                    Pricing
-                  </Typography>
-                </MenuItem>
+
                 <MenuItem
                   onClick={() => scrollToSection('faq')}
                   sx={{ py: '6px', px: '12px' }}
@@ -131,6 +128,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     FAQ
                   </Typography>
                 </MenuItem>
+                
               </Box>
             </Box>
             <Box
@@ -146,7 +144,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 variant="text"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-in/"
+                href="#"
                 target="_blank"
               >
                 Sign in
@@ -156,7 +154,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 variant="contained"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
+                href="#"
                 target="_blank"
               >
                 Sign up

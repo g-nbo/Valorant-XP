@@ -1,17 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import LandingPage from './LandingPage/LandingPage'
+import LandingPage from './pages/LandingPage/LandingPage'
 import SelectAgentsPage from './pages/SelectAgentsPage'
 import AgentsPage from './pages/AgentsPage'
 import AgentContext from './context/AgentContext'
 import getAgents from './services/valAPI'
-
-
-
-
-
-
 
 
 function App() {
