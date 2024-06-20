@@ -8,7 +8,29 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
+const incrementButton = {
+  INCREMENT: 'INCREMENT',
+  DECREMENT: 'DECREMENT'
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case incrementButton.INCREMENT:
+      console.log(state.count)
+      return { count: state.count + 1 };
+    case incrementButton.DECREMENT:
+      console.log(state.count)
+      return { count: state.count - 1 };
+    default:
+      return state;
+  }
+}
+
+
+
 export default function Hero() {
+  const [state, dispatch] = React.useReducer(reducer, { count: 0 })
+
   return (
     <Box
       id="hero"
@@ -52,7 +74,7 @@ export default function Hero() {
                   theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
               }}
             >
-              
+
             </Typography>
           </Typography>
           <Typography
@@ -69,13 +91,13 @@ export default function Hero() {
             useFlexGap
             sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
           >
-            
-            <Button href='/agents' style={{minWidth: "20em"}} variant="contained" color="primary">
+
+            <Button onClick={() => dispatch({ type: incrementButton.INCREMENT })} href='/agents' style={{ minWidth: "20em" }} variant="contained" color="primary">
               Start Here
             </Button>
-            
+
           </Stack>
-          
+
         </Stack>
         <Box
           id="image"

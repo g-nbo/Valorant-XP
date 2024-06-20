@@ -56,38 +56,41 @@ ToggleCustomTheme.propTypes = {
   toggleCustomTheme: PropTypes.func.isRequired,
 };
 
+
+
+
 export default function LandingPage() {
   const [mode, setMode] = React.useState('dark');
-  const [showCustomTheme, setShowCustomTheme] = React.useState(false);
+  const [count, setCount] = React.useState(0)
 
   const defaultTheme = createTheme({
     palette: {
       mode,
       ...(mode === 'light'
         ? {
-            // palette values for light mode
-            primary: red,
-            divider: red[200],
-            text: {
-              primary: grey[900],
-              secondary: grey[800],
-            },
-          }
+          // palette values for light mode
+          primary: red,
+          divider: red[200],
+          text: {
+            primary: grey[900],
+            secondary: grey[800],
+          },
+        }
         : {
-            // palette values for dark mode
-            primary: red,
-            divider: red[900],
-            background: {
-              default: grey[900],
-              paper: grey[900],
-            },
-            text: {
-              primary: '#fff',
-              secondary: grey[500],
-            },
-          }),
+          // palette values for dark mode
+          primary: red,
+          divider: red[900],
+          background: {
+            default: grey[900],
+            paper: grey[900],
+          },
+          text: {
+            primary: '#fff',
+            secondary: grey[500],
+          },
+        }),
     },
-});
+  });
 
   const toggleColorMode = () => {
     setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
