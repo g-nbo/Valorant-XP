@@ -2,7 +2,7 @@
 ## Discover and compare top agents effortlessly
 ---
 
-#### Link to the live site:
+## Link to the live site:
 - https://valorant-xp.netlify.app/
 
 #### Technologies used: 
