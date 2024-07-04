@@ -15,13 +15,13 @@
 - Integrated the Valorant API to fetch real-time, accurate information about all 24 agents.
 - Employed robust data validation and regular updates from the API to maintain the accuracy of agent profiles, abilities, and stats.
 - Used Material UI's responsive design features and CSS media queries to ensure the website looks great and functions well on all devices, from desktops to mobile phones.
-### A link to your live site:
+#### A link to your live site:
 - https://667347c9235f9b9984a5c1d4--lucky-sundae-a5e840.netlify.app/
 
-### Usage instructions, if relevant.
+#### Usage instructions.
 - Launch the site and click 'Start Here' 
 - From there, select any agent to explore their detailed profile, including a short description, abilities, and in-game role.
 
-### Unsolved problems.
+#### Unsolved problems.
 - All problems have been solved, but many improvements can still be made!
 - (Lookout for future updates!)
